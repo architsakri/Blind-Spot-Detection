@@ -25,7 +25,7 @@ void loop()
   distance = (duration/2) / 29.1;
    
     if (distance <= 50 && distance >= 0) {
-      freq+=100;
+      freq=distance*10;
       
       tone(SPEAKER, freq);
       
